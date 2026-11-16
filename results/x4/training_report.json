@@ -1,0 +1,92 @@
+{
+  "inicio": "2026-11-08T23:03:09",
+  "hardware": {
+    "python": "3.13.16",
+    "torch": "2.14.1+cu130",
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "gpu_mem_gb": 15.6,
+    "cuda": "13.0"
+  },
+  "fases": {
+    "fase1_srresnet": {
+      "iteraciones": 3000,
+      "segundos": 195.1
+    },
+    "fase2_srgan": {
+      "iteraciones": 6000,
+      "segundos": 1193.0
+    }
+  },
+  "fin": "2026-11-08T23:30:20",
+  "tiempo_total_segundos": 1389.7,
+  "tiempo_total": "0h 23m 10s",
+  "parametros_generador": 1546435,
+  "parametros_discriminador": 13076033,
+  "val_final": {
+    "iter": 9000,
+    "phase": "gan",
+    "psnr": 25.625158309936523,
+    "ssim": 0.7060427665710449,
+    "psnr_bic": 25.850811004638672,
+    "ssim_bic": 0.7103302478790283
+  },
+  "pesos": [
+    {
+      "archivo": "D_final.pth",
+      "MB": 52.42,
+      "sha256": "d233c2e994ad18136ae5c4bfb8ef1d70a9764300e1d466edcf14c418126eaa7e"
+    },
+    {
+      "archivo": "G_fase1_srresnet.pth",
+      "MB": 6.22,
+      "sha256": "681b7c1b7cb88f088c0bda1e8fc5e7b042cee67567a91d3bbf47323bd731ed4d"
+    },
+    {
+      "archivo": "G_final_srgan.pth",
+      "MB": 6.22,
+      "sha256": "805e0d6e1f67247df5a6f4ef48996199bbbe639ac3d6410b97394e77f869d1f5"
+    }
+  ],
+  "config": {
+    "SCALE": 4,
+    "PATCH": 128,
+    "BATCH": 16,
+    "ITERS_PRE": 3000,
+    "ITERS_GAN": 6000,
+    "LR_PRE": 0.0002,
+    "LR_GAN": 0.0001,
+    "W_PIX": 0.01,
+    "W_PERC": 1.0,
+    "W_ADV": 0.005,
+    "W_COLOR": 0.1,
+    "CH": 64,
+    "N_BLOCKS": 16,
+    "USE_DIV2K": false
+  },
+  "video": {
+    "original": {
+      "w": 320,
+      "h": 240,
+      "fps": 30.0,
+      "fps_str": "30/1",
+      "field_order": "progressive",
+      "codec": "h264",
+      "duration": 65.0,
+      "size_mb": 4.53,
+      "bitrate_kbps": 388
+    },
+    "clip": {
+      "w": 320,
+      "h": 240,
+      "fps": 30.0,
+      "fps_str": "30/1",
+      "field_order": "progressive",
+      "codec": "h264",
+      "duration": 65.0,
+      "size_mb": 4.54,
+      "bitrate_kbps": 390
+    },
+    "frames_entrenamiento": 927
+  }
+}

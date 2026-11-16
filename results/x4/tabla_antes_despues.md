@@ -1,0 +1,11 @@
+| característica | antes (original) | después (SRGAN-TV) |
+|---|---|---|
+| Resolución | 320x240 | 1280x960 |
+| Píxeles por frame | 76800 | 1228800 |
+| Duración (s) | 65.0 | 65.0 |
+| FPS | 30.0 | 30.0 |
+| Nitidez (var. Laplaciano, bicúbico vs SR) | 4.84 | 122.81 |
+| Bloques de compresión (1 = sin bloques) | 1.004 | 0.904 |
+| Ruido estimado (sigma) | 0.201 | 1.271 |
+| Parpadeo temporal (dif. entre frames) | 2.419 | 2.4 |
+| Tiempo de procesamiento | - | 0h 13m 59s (2.3 fps) |

@@ -1,0 +1,5 @@
+{
+  "tiempo_inferencia_s": 839.2,
+  "frames": 1950,
+  "pesos_usados": "G_final_srgan.pth"
+}
